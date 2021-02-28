@@ -31,7 +31,7 @@ $login = $client->createAuthUrl();
         $fileName    = 'Form No. 234.pdf'; // file.mp4;
 
     //This is the destination folder for Google Drive
-        $parentId   = '1C86h6fG1lI68arw6IQUQmBp6jL6p6i1G';
+        $parentId   = '13Y4FphVsMlVWd1g8z4oyo0LkmpZDfVZZ';
 
 
         if ( !empty($fileName) ) {
@@ -45,7 +45,7 @@ $login = $client->createAuthUrl();
             $file->setParents(array($parentId));
 
             //Creates the file on GDrive
-            $data = file_get_contents("http://egov.uok.edu.in/CollegeAdm/AdmDetails/showreports.aspx?rrid=20161&courseyear=1&UID=234&reportid=101");
+            $data = file_get_contents("https://egov.uok.edu.in/CollegeAdm/AdmDetails/showreports.aspx?rrid=20161&courseyear=1&UID=234&reportid=101");
 
             $createdFile = $service->files->create($file, array(
                 'data' => $data,
