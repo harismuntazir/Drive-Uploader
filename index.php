@@ -31,7 +31,7 @@ $login = $client->createAuthUrl();
         $fileName    = 'Form No. 234.pdf'; // file.mp4;
 
     //This is the destination folder for Google Drive
-        $parentId   = '1Err_0koHMQYu7eEv-EcHa2ugGfaLqxgr';
+        $parentId   = '1C86h6fG1lI68arw6IQUQmBp6jL6p6i1G';
 
 
         if ( !empty($fileName) ) {
